@@ -929,6 +929,7 @@ update_cache_sha1_cpu(struct mesa_sha1 *ctx)
 static void
 lp_disk_cache_create(struct llvmpipe_screen *screen)
 {
+   // Try disable cache
    screen->disk_shader_cache = disk_cache_create("llvmpipe", NULL, 0);
 }
 
