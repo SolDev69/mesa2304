@@ -92,8 +92,6 @@ sw_screen_create_named(struct sw_winsys *winsys, const char *driver)
       	screen = panfrost_create_screen(kbase_device_fd, NULL);
       }
    }
-#else
-#error You forgot to include Panfrost
 #endif
 
    return screen ? debug_screen_wrap(screen) : NULL;
